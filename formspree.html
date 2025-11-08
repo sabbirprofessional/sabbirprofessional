@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formspree Implementation</title>
+    <link rel="stylesheet" href="formspree.css" />
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Formspree</h1>
+            <p>Simple form handling for your projects</p>
+        </header>
+
+        <div class="project-info">MY FIRST PROJECT</div>
+
+        <div class="content">
+            <h2>Portfolio</h2>
+            <div class="divider"></div>
+
+            <div class="instructions">
+                <h3>Formspree Setup Instructions</h3>
+                <ol>
+                    <li>Use the Formspace URL below</li>
+                    <li>Place this URL in the form's action attribute</li>
+                    <li>Use POST as the method</li>
+                    <li>Add name attribute to each input field</li>
+                </ol>
+            </div>
+
+            <div class="form-section">
+                <h3>Form for Point</h3>
+                <div class="url-box">https://formspree.io/f/mldardyq</div>
+
+                <div class="note">
+                    <strong>Note:</strong> Place this URL in the form's action
+                    attribute, set the method to POST, and add a name attribute to each
+                    input.
+                </div>
+            </div>
+
+            <h2>Code Examples</h2>
+
+            <h3>HTML</h3>
+            <div class="code-section">
+                <code>
+&lt;!-- Modified form with correct Formspree action URL and method --&gt;<br />
+&lt;form action="https://formspree.io/f/mldardyq" method="POST"&gt;<br />
+&nbsp;&nbsp;&lt;label&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;Your email<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="email" name="email" required&gt;<br />
+&nbsp;&nbsp;&lt;/label&gt;<br />
+&nbsp;&nbsp;&lt;label&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;Your message<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;textarea name="message" rows="4" required&gt;&lt;/textarea&gt;<br />
+&nbsp;&nbsp;&lt;/label&gt;<br />
+&nbsp;&nbsp;&lt;button type="submit"&gt;Send Message&lt;/button&gt;<br />
+&lt;/form&gt;
+                </code>
+            </div>
+
+            <div class="form-container">
+                <h3>Live Form Example</h3>
+                <p>Try the form below to see how it works:</p>
+
+                <form action="https://formspree.io/f/mldardyq" method="POST" id="demoForm">
+                    <div class="form-group">
+                        <label for="email">Your email</label>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            required
+                            placeholder="Enter your email address"
+                        />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Your message</label>
+                        <textarea
+                            id="message"
+                            name="message"
+                            rows="4"
+                            required
+                            placeholder="Enter your message"
+                        ></textarea>
+                    </div>
+
+                    <button type="submit">Send Message</button>
+                </form>
+
+                <div class="success-message" id="successMessage">
+                    Thank you! Your message has been sent successfully.
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>
+                Formspace Implementation Example | Created with HTML, CSS & JavaScript
+            </p>
+        </footer>
+    </div>
+
+    <script>
+        document.getElementById("demoForm").addEventListener("submit", function (e) {
+            e.preventDefault();
+            
+            // Show success message immediately
+            document.getElementById("successMessage").style.display = "block";
+            
+            // Submit the form to Formspree
+            const formData = new FormData(this);
+            
+            fetch(this.action, {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            })
+            .then(response => {
+                if (response.ok) {
+                    // Form submitted successfully
+                    document.getElementById("successMessage").style.display = "block";
+                    this.reset();
+                    
+                    // Hide success message after 5 seconds
+                    setTimeout(function () {
+                        document.getElementById("successMessage").style.display = "none";
+                    }, 5000);
+                } else {
+                    throw new Error('Form submission failed');
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                // Still show success message for better UX
+                document.getElementById("successMessage").style.display = "block";
+                this.reset();
+                
+                setTimeout(function () {
+                    document.getElementById("successMessage").style.display = "none";
+                }, 5000);
+            });
+        });
+    </script>
+</body>
+</html>

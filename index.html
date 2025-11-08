@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <!-- index.html এর head section এ viewport meta ট্যাগ আপডেট করুন -->
+     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <!-- Add favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <!-- Improved SEO meta tags -->
+    <meta name="description" content="MD Sabbir Hossain - Professional Web Developer & UI/UX Designer offering custom website development and design services">
+    <meta name="keywords" content="web development, UI/UX design, frontend development, responsive websites, Bangladesh developer">
+    <meta name="author" content="MD Sabbir Hossain">
+    <title>MD Sabbir Hossain - Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header>
+
+    <a href="#home" class="logo">Portfolio</a>
+    <ul class="navlist" id="navlist">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+        <a href="#contact" class="nav-btn">Hire Me!</a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+    </div>
+</header>
+
+<!-- ===== HOME SECTION ===== -->
+<!-- HTML -->
+<section id="home" class="hero">
+    
+    <div class="hero-img">
+        <img src="sabbir.png" alt="MD Sabbir Hossain - Web Developer" loading="lazy" width="600" height="600">
+    </div>
+
+    <div class="hero-text">
+        <h6>Hello, <span>my name is</span></h6>
+        <h1><span>Sabbir</span> Hossain</h1>
+        <h4>I am a <span class="auto-type"></span></h4>
+        <p>
+            Zero frameworks, 100% results. I engineer lightweight, mobile-first websites with raw HTML/CSS/JS—prioritizing sub-second load times, WCAG compliance, and flawless cross-browser performance to elevate your digital presence.
+        </p>
+        
+        <div class="hero-icons">
+            <a href="#"><i class="ri-behance-fill"></i></a>
+            <a href=" https://github.com/sabbirprofessional" target="_blank" rel="noopener noreferrer" aria-label="Visit my github profile"><i class="ri-github-fill"></i></a>
+           
+           <a href="https://www.linkedin.com/in/md-sabbir-hossain-4203b6356" 
+            target="_blank" 
+             rel="noopener noreferrer"
+             aria-label="Visit my LinkedIn profile"><i class="ri-linkedin-box-fill"></i></a>
+            <a href="#"><i class="ri-twitter-fill"></i></a>
+            <a href="#"><i class="ri-dribbble-fill"></i></a>
+        </div>
+
+        <div class="cta-buttons">
+            <a href="#" class="gradient-btn">
+                <i class="ri-download-line"></i>
+                Download CV
+            </a>
+            <a href="#contact" class="border-btn">
+                Hire Me
+                <i class="ri-arrow-right-line"></i>
+            </a>
+        </div>
+    </div>
+
+
+    <!-- Optimized profile image -->
+    
+     
+
+
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script>
+    // Typing Animation
+    const typed = new Typed('.auto-type', {
+        strings: ["Web Developer", "UI/UX Designer", "Frontend Engineer"],
+        typeSpeed: 100,
+        backSpeed: 50,
+        loop: true,
+        showCursor: false
+    });
+
+    // Navbar Height Adjustment
+    window.addEventListener('load', () => {
+        const navbar = document.querySelector('header');
+        const heroSection = document.querySelector('.hero');
+        heroSection.style.marginTop = `${navbar.offsetHeight}px`;
+    });
+</script>
+</section>
+
+<!--===== about section =====-->
+
+<section id="about" class="about">
+    <div class="about-container">
+       
+        
+        <div class="about-content">
+            <h3><span>Web Developer</span> & UI/UX Designer</h3>
+            <p>From Bogura, Bangladesh. With 2+ years of experience in web development, I specialize in creating modern, responsive websites that combine aesthetic design with robust functionality. My passion lies in turning complex problems into simple, beautiful, and intuitive solutions.</p>
+            
+            <div class="about-info">
+                <div class="info-item">
+                    <h4>2+</h4>
+                    <p>Years Experience</p>
+                </div>
+                <div class="info-item">
+                    <h4>50+</h4>
+                    <p>Projects Completed</p>
+                </div>
+                <div class="info-item">
+                    <h4>20+</h4>
+                    <p>Happy Clients</p>
+                </div>
+            </div>
+
+            <div class="skills-container">
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <span>HTML/CSS</span>
+                        <span>95%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 95%"></div>
+                    </div>
+                </div>
+                
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <span>JavaScript</span>
+                        <span>85%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 85%"></div>
+                    </div>
+                </div>
+                
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <span>UI/UX Design</span>
+                        <span>90%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 90%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="about-img">
+            <img src="hero image 2.png" alt="Sabbir Hossain">
+        </div>
+    </div>
+</section>
+
+<!-- ===== SERVICES SECTION ===== -->
+<section id="services" class="services">
+    <h2>My Services</h2>
+    
+    <div class="services-container">
+        <div class="service-item">
+            <i class="ri-code-box-fill service-icon"></i>
+            <h3>Web Development</h3>
+            <p>Custom website development using modern technologies like HTML5, CSS3, and JavaScript</p>
+        </div>
+
+        <div class="service-item">
+            <i class="ri-palette-fill service-icon"></i>
+            <h3>UI/UX Design</h3>
+            <p>User-centered interface design with prototyping and interaction design</p>
+        </div>
+
+        <div class="service-item">
+            <i class="ri-smartphone-fill service-icon"></i>
+            <h3>Mobile Responsive</h3>
+            <p>Fully responsive designs that work perfectly on all devices</p>
+        </div>
+
+        <div class="service-item">
+            <i class="ri-rocket-2-fill service-icon"></i>
+            <h3>SEO Optimization</h3>
+            <p>Search engine optimization and performance optimization</p>
+        </div>
+    </div>
+
+</section>
+
+
+<!--===== portfolio sections =====-->
+
+<section id="portfolio" class="portfolio">
+    <h2>My Portfolio</h2>
+    <!-- Add filter buttons -->
+    <div class="portfolio-filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="web">Web</button>
+        <button class="filter-btn" data-filter="design">Design</button>
+    </div>
+    
+    <div class="portfolio-container">
+        <div class="portfolio-item">
+            <img src="portfolio.jpg" class="portfolio-img" alt="Portfolio Project">
+            <div class="portfolio-layer">
+                <h3>Portfolio Website</h3>
+                <p>Modern responsive portfolio with interactive elements</p>
+                <div class="portfolio-links">
+                    <a href="#"><i class="ri-external-link-line"></i></a>
+                    <a href="#"><i class="ri-github-fill"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="portfolio-item">
+            <img src="buisiness.jpg" class="portfolio-img" alt="E-commerce Project">
+            <div class="portfolio-layer">
+                <h3>E-Commerce Platform</h3>
+                <p>Full-featured online shopping solution</p>
+                <div class="portfolio-links">
+                    <a href="#"><i class="ri-external-link-line"></i></a>
+                    <a href="#"><i class="ri-github-fill"></i></a>
+                </div>
+            </div>
+        </div>        
+    </div>
+
+    <!-- Add filter buttons -->
+
+
+<!-- Portfolio items with data attributes -->
+<div class="portfolio-item" data-category="web">
+    <!-- ... existing content ... -->
+</div>
+</section>
+
+<!-- ===== SKILLS SECTION ===== -->
+<section id="skills" class="skills">
+    <h2>Skills</h2>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>WordPress</li>
+    </ul>
+    <!-- Updated skills section -->
+<div class="skill-item">
+    <div class="skill-header">
+        <span>React</span>
+        <span>80%</span>
+    </div>
+    <div class="progress-bar">
+        <div class="progress" style="width: 80%"></div>
+    </div>
+</div>
+</section>
+
+<!--===== why-hire-me section ======-->
+<section id="why-hire-me" class="why-hire-me">
+    <h2>Why Hire Me?</h2>
+    
+    <div class="features-grid">
+        <div class="feature-card">
+            <i class="ri-shield-star-line feature-icon"></i>
+            <h3>Quality Assurance</h3>
+            <p>Pixel-perfect implementations with rigorous testing protocols and cross-browser compatibility checks</p>
+        </div>
+        
+        <div class="feature-card">
+            <i class="ri-time-line feature-icon"></i>
+            <h3>Fast Delivery</h3>
+            <p>Quick turnaround times without compromising quality, using efficient development workflows</p>
+        </div>
+        
+        <div class="feature-card">
+            <i class="ri-customer-service-2-line feature-icon"></i>
+            <h3>Dedicated Support</h3>
+            <p>24/7 availability with post-launch maintenance and quick response times</p>
+        </div>
+    </div>
+
+    <div class="cta-button">
+        <a href="#contact" class="btn">
+            <i class="ri-rocket-2-line"></i>
+            Start Your Project Now
+        </a>
+    </div>
+</section>
+
+<!-- ===== TESTIMONIALS SECTION ===== -->
+<section id="testimonials" class="testimonials">
+    <h2>Client Testimonials</h2>
+    
+    <div class="testimonial-grid">
+        <div class="testimonial-card">
+            <i class="ri-double-quotes-l quote-icon"></i>
+            <p class="testimonial-text">
+                "Sabbir transformed our outdated website into a modern masterpiece. His attention to detail and communication throughout the project was exceptional."
+            </p>
+            <div class="client-info">
+                <img src="john doe.jpg" alt="John Doe" class="client-avatar">
+                <div class="client-details">
+                    <h4>John Doe</h4>
+                    <p>CEO, Tech Solutions</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="testimonial-card">
+            <i class="ri-double-quotes-l quote-icon"></i>
+            <p class="testimonial-text">
+                "The website Sabbir developed for us increased our conversion rate by 200%. Highly recommend his services to any business!"
+            </p>
+            <div class="client-info">
+                <img src="client 02.jpg" alt="Jane Smith" class="client-avatar">
+                <div class="client-details">
+                    <h4>Jane Smith</h4>
+                    <p>Founder, Digital Agency</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="testimonial-card">
+            <i class="ri-double-quotes-l quote-icon"></i>
+            <p class="testimonial-text">
+                "Working with Sabbir was a pleasure. He delivered exactly what we needed on time and within budget. Will definitely work with him again!"
+            </p>
+            <div class="client-info">
+                <img src="client 3.jpg" alt="Mike Johnson" class="client-avatar">
+                <div class="client-details">
+                    <h4>Mike Johnson</h4>
+                    <p>E-commerce Entrepreneur</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- ===== FAQ SECTION ===== -->
+<section id="faq" class="faq">
+    <h2>FAQs</h2>
+    
+    <div class="faq-container">
+        <div class="faq-item">
+            <div class="faq-question">
+                <i class="ri-add-line faq-icon"></i>
+                <h3>What services do you provide?</h3>
+            </div>
+            <div class="faq-answer">
+                <p>I offer complete web development solutions including UI/UX design, frontend development, SEO optimization, and performance tuning.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">
+                <i class="ri-add-line faq-icon"></i>
+                <h3>How long does a typical project take?</h3>
+            </div>
+            <div class="faq-answer">
+                <p>Project duration depends on complexity. A basic website takes 1-2 weeks, while complex projects may take 4-6 weeks.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">
+                <i class="ri-add-line faq-icon"></i>
+                <h3>Do you offer ongoing support?</h3>
+            </div>
+            <div class="faq-answer">
+                <p>Yes, I provide 1 month free support after launch, followed by affordable maintenance packages.</p>
+            </div>
+        </div>
+
+        <!-- Add more FAQ items -->
+    </div>
+</section>
+
+ <!--===== certifications section =====-->
+<section id="certifications" class="certifications">
+    <h2>Certifications</h2>
+    
+    <div class="certifications-grid">
+        <div class="certification-item">
+            <div class="certification-header">
+                <i class="ri-medal-2-line certification-icon"></i>
+                <div>
+                    <h3>Web Development Master</h3>
+                    <p>National Skill Development Authority</p>
+                </div>
+            </div>
+            <span class="certification-date">Issued: March 2024</span>
+        </div>
+
+        <div class="certification-item">
+            <div class="certification-header">
+                <i class="ri-code-s-slash-line certification-icon"></i>
+                <div>
+                    <h3>Frontend Development</h3>
+                    <p>Johns Hopkins University</p>
+                </div>
+            </div>
+            <span class="certification-date">Issued: January 2024</span>
+        </div>
+
+        <div class="certification-item">
+            <div class="certification-header">
+                <i class="ri-cpu-line certification-icon"></i>
+                <div>
+                    <h3>Computer Science Fundamentals</h3>
+                    <p>Harvard University</p>
+                </div>
+            </div>
+            <span class="certification-date">Issued: December 2023</span>
+        </div>
+    </div>
+</section>
+
+<!--===== work process section =====-->
+<section id="work-process" class="work-process">
+    <h2>Work Process</h2>
+    
+    <div class="process-container">
+        <div class="process-item">
+            <div class="process-number">1</div>
+            <i class="ri-search-line process-icon"></i>
+            <h3>Discovery & Planning</h3>
+            <p>Requirements gathering and project roadmap creation</p>
+        </div>
+
+        <div class="process-item">
+            <div class="process-number">2</div>
+            <i class="ri-pencil-ruler-line process-icon"></i>
+            <h3>Design & Prototyping</h3>
+            <p>Wireframing and UI/UX design implementation</p>
+        </div>
+
+        <div class="process-item">
+            <div class="process-number">3</div>
+            <i class="ri-code-s-slash-line process-icon"></i>
+            <h3>Development</h3>
+            <p>Agile development with modern technologies</p>
+        </div>
+
+        <div class="process-item">
+            <div class="process-number">4</div>
+            <i class="ri-bug-line process-icon"></i>
+            <h3>Testing</h3>
+            <p>Quality assurance and cross-browser testing</p>
+        </div>
+
+        <div class="process-item">
+            <div class="process-number">5</div>
+            <i class="ri-rocket-line process-icon"></i>
+            <h3>Launch</h3>
+            <p>Deployment and post-launch monitoring</p>
+        </div>
+    </div>
+</section>
+
+<!-- ===== PRICING PLANS SECTION ===== -->
+<section id="pricing" class="pricing">
+    <h2>Pricing Plans</h2>
+    
+    <div class="pricing-grid">
+        <div class="pricing-card">
+            <div class="price-header">
+                <h3>Basic Plan</h3>
+                <div class="price-amount">$35</div>
+                <span class="price-duration">/ one-time</span>
+            </div>
+            <ul class="pricing-features">
+                <li><i class="ri-check-line"></i>Single Page Website</li>
+                <li><i class="ri-check-line"></i>Responsive Design</li>
+                <li><i class="ri-check-line"></i>Basic SEO</li>
+                <li><i class="ri-close-line"></i>E-commerce</li>
+            </ul>
+            <div class="price-button">
+                <a href="#contact" class="btn">Choose Plan</a>
+            </div>
+        </div>
+
+        <div class="pricing-card recommended">
+            <div class="price-header">
+                <h3>Standard Plan</h3>
+                <div class="price-amount">$100</div>
+                <span class="price-duration">/ one-time</span>
+            </div>
+            <ul class="pricing-features">
+                <li><i class="ri-check-line"></i>Up to 5 Pages</li>
+                <li><i class="ri-check-line"></i>Custom Design</li>
+                <li><i class="ri-check-line"></i>Advanced SEO</li>
+                <li><i class="ri-check-line"></i>Contact Form</li>
+            </ul>
+            <div class="price-button">
+                <a href="#contact" class="btn">Choose Plan</a>
+            </div>
+        </div>
+
+        <div class="pricing-card">
+            <div class="price-header">
+                <h3>Premium Plan</h3>
+                <div class="price-amount">$300</div>
+                <span class="price-duration">/ one-time</span>
+            </div>
+            <ul class="pricing-features">
+                <li><i class="ri-check-line"></i>Unlimited Pages</li>
+                <li><i class="ri-check-line"></i>E-commerce</li>
+                <li><i class="ri-check-line"></i>Premium Support</li>
+                <li><i class="ri-check-line"></i>CMS Integration</li>
+            </ul>
+            <div class="price-button">
+                <a href="#contact" class="btn">Choose Plan</a>
+            </div>
+        </div>
+    </div>
+</section>
+ <!--===== clients section =====-->
+<section id="clients" class="clients">
+    <h2>Trusted By</h2>
+    <p>Worked with amazing companies and creative people worldwide</p>
+    
+    <div class="clients-grid">
+        <div class="client-item">
+            <img src="company a.avif" alt="Company A">
+            <div class="client-details">
+                <h3>Company A</h3>
+                <p>Portfolio Website Development</p>
+            </div>
+        </div>
+        
+        <div class="client-item">
+            <img src="company b.avif" alt="Company B">
+            <div class="client-details">
+                <h3>Company B</h3>
+                <p>E-commerce Solution</p>
+            </div>
+        </div>
+        
+        <!-- Add more client items -->
+    </div>
+</section>
+
+<!-- ===== BLOG SECTION ===== -->
+<section id="blog" class="blog">
+    <h2>Latest Articles</h2>
+    
+    <div class="blog-grid">
+        <article class="blog-card">
+            <div class="blog-header">
+                <i class="ri-pen-nib-line blog-icon"></i>
+                <span class="blog-date">March 15, 2024</span>
+            </div>
+            <h3>Modern Web Development Trends in 2025</h3>
+            <p class="blog-excerpt">Explore the latest advancements in web technologies and how they're shaping the future of digital experiences.</p>
+            <div class="blog-meta">
+                <span class="blog-tag">Development</span>
+                <a href="#" class="read-more">
+                    Read More
+                    <i class="ri-arrow-right-s-line"></i>
+                </a>
+            </div>
+        </article>
+
+        <article class="blog-card">
+            <div class="blog-header">
+                <i class="ri-palette-line blog-icon"></i>
+                <span class="blog-date">March 10, 2024</span>
+            </div>
+            <h3>UI/UX Best Practices for Modern Websites</h3>
+            <p class="blog-excerpt">Discover essential design principles that enhance user engagement and conversion rates.</p>
+            <div class="blog-meta">
+                <span class="blog-tag">Design</span>
+                <a href="#" class="read-more">
+                    Read More
+                    <i class="ri-arrow-right-s-line"></i>
+                </a>
+            </div>
+        </article>
+
+        <article class="blog-card">
+            <div class="blog-header">
+                <i class="ri-line-chart-line blog-icon"></i>
+                <span class="blog-date">March 5, 2024</span>
+            </div>
+            <h3>SEO Strategies for 2025</h3>
+            <p class="blog-excerpt">Master the latest SEO techniques to boost your website's visibility and organic traffic.</p>
+            <div class="blog-meta">
+                <span class="blog-tag">Marketing</span>
+                <a href="#" class="read-more">
+                    Read More
+                    <i class="ri-arrow-right-s-line"></i>
+                </a>
+            </div>
+        </article>
+    </div>
+</section>
+
+<!-- ===== CONTACT SECTION ===== -->
+<section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <form id="contactForm" action="https://formspree.io/f/mldardyq" method="POST" class="contact-form">
+        <div class="input-group">
+            <input type="text" name="name" placeholder="Your Name" required />
+            <input type="email" name="email" placeholder="Your Email" required />
+        </div>
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+        <div id="formResponse"></div>
+    </form>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+    <div class="back-to-top">
+        <i class="ri-arrow-up-line"></i>
+    </div>
+    
+    <div class="footer-container">
+        <div class="footer-col">
+            <h3>Quick Links</h3>
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#services">Services</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+        
+        <div class="footer-col">
+            <h3>Connect With Me</h3>
+            <div class="social-icons">
+                <a href="#"><i class="ri-facebook-fill"></i></a>
+                <a href="#"><i class="ri-github-fill"></i></a>
+                <a href="#"><i class="ri-linkedin-fill"></i></a>
+                <a href="#"><i class="ri-twitter-fill"></i></a>
+            </div>
+        </div>
+        
+        <div class="footer-col">
+            <h3>Contact Info</h3>
+            <div class="footer-links">
+                <p>Email: sabbir.professional.01@gmail.com</p>
+                <p>Phone: +880 1816 490173</p>
+                <p>Bogura, Bangladesh</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="copyright">
+        <p>© 2025 MD Sabbir Hossain. All rights reserved.</p>
+    </div>
+</footer>
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+</body>
+</html>
